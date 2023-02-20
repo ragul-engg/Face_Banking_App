@@ -1,0 +1,8 @@
+try:
+    import cPickle as pickle
+except:
+    import pickle
+AccInfo={101:0,102:0,103:0,104:0,105:0,106:0,107:0,108:0,109:0,110:0}
+with open('bankaccdb.txt','wb') as file:
+	pickle.dump(AccInfo,file)
+print(AccInfo)
